@@ -9,7 +9,7 @@ function Home() {
   const [totalPoints, setTotalPoints] = useState(0);
   const MAX_POINTS = 100;
 
-  const handleTimeframeChange = (timeframe) => {
+  const timeframeChange = (timeframe) => {
     setCurrentTimeframe(timeframe);
   };
 
@@ -28,7 +28,7 @@ function Home() {
             {currentTimeframe === "year" && "Yearly Goals"}
           </h2>
         </div>
-        <GoalTimeLine onTimeframeChange={handleTimeframeChange} />
+        <GoalTimeLine onTimeframeChange={timeframeChange} />
         <GoalApp
           timeframe={currentTimeframe}
           onPointsEarned={handlePointsChange}

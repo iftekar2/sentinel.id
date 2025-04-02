@@ -36,7 +36,6 @@ const ProgressBarOuter = styled.div`
 `;
 
 const ProgressBarInner = styled.div`
-  width: ${(props) => props.width}%;
   height: 100%;
   background-color: #8cd3c5;
   transition: width 0.5s ease-in-out;
